@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My own Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer type="text/javascript" src="system.js"></script>
+</head>
+<body>
+    <h2>Calculator</h2>
+    <div class="main-container">
+        <h2 class="title">Calculator</h2>
+        <div class="input-container" id="input-container">
+            <div class="output-container" id="output-container"></div>
+            <input type="text" id="num-box" placeholder="Enter Number">
+        </div>
+        <div class="keypad">
+            <button class= "numkeys" id="1key" onclick="num(1)">1</button>
+            <button class= "numkeys" id="2key" onclick="num(2)">2</button>
+            <button class= "numkeys" id="3key" onclick="num(3)">3</button>
+            <button class= "numkeys" id="4key" onclick="num(4)">4</button>
+            <button class= "numkeys" id="7key" onclick="num(5)">5</button>
+            <button class= "numkeys" id="6key" onclick="num(6)">6</button>
+            <button class= "numkeys" id="5key" onclick="num(7)">7</button>
+            <button class= "numkeys" id="8key" onclick="num(8)">8</button>
+            <button class= "numkeys" id="9key" onclick="num(9)">9</button>
+            <button class= "numkeys" id="0key" onclick="num(0)">0</button>
+            <button class= "numkeys" id="00key" onclick="num(0+0)">00</button>
+        </div>
+        <div class="operator-container">
+            <button id="add-key" onclick="operator('plus')">+</button>
+            <button id="minus-key" onclick="operator('minus')">-</button>
+            <button id="multiply-key" onclick="operator('multiply')">x</button>
+            <button id="divide-key" onclick="operator('divide')">÷</button>
+            <button id="solution-key" onclick="operator('solution')">=</button>
+            <button id ="clear-key" onclick="operator('delete')">Delete</button>
+            <button id ="clear-key" onclick="operator('clear')">Clear</button>
+        </div>
+    </div>
+</body>
+</html>
