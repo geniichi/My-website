@@ -13,7 +13,8 @@ h2 {
 }
 
 .main-container {
-    margin: 0 600px;
+    margin: 0 auto;
+    width: 300px;
     padding: 15px 20px;
     border: solid 1px black;
     border-radius: 3px;
@@ -30,4 +31,38 @@ h2 {
     width: 200px;
     overflow-y: auto;
     overflow-x: auto;
+}
+
+.number-container {
+    display:grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1px;
+}
+
+.number-container > button {
+    width: 49.5px;
+    height: 25px;
+    margin: 0px;
+    border-radius: 0px;
+    border: solid 1px black;
+}
+
+.operator-container {
+    display:grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
+}
+
+.operator-container:nth-child(5) {
+    grid-area:3/1/4/3;
+}
+
+.operator-container:nth-child(6) {
+    grid-area:4/1/5/3;
+}
+
+.keypad {
+    display:flex;
+    flex-direction: row;
 }
